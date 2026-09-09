@@ -1,0 +1,22 @@
+[package]
+name = "scim-kit"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+license = "MIT OR Apache-2.0"
+description = "SCIM 2.0 provisioning toolkit: protocol types, filtering, pagination, and patching (RFC 7644)"
+repository = "https://github.com/WyattAu/scim-kit"
+keywords = ["scim", "provisioning", "rfc7644", "identity"]
+categories = ["authentication"]
+
+[features]
+default = []
+axum = ["dep:axum"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+thiserror = "2"
+dashmap = "6"
+axum = { version = "0.8", optional = true }
