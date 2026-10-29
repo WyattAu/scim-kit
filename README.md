@@ -18,6 +18,14 @@ suite against the estate's gate matrix
 scim-kit = "0.1"
 ```
 
+## Stability
+
+`scim-kit` is 1.0. Breaking changes require a minor bump and a `#[deprecated]`
+window of at least one minor release; MSRV bumps are minor releases, never
+patch releases. `missing_docs` is denied and `unsafe` is forbidden. Wire shapes
+for the core schemas are contractual: any 1.x client interops with any 1.x
+server. New resource type helpers may arrive in minors.
+
 ## License
 
 MIT OR Apache-2.0.
