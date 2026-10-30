@@ -1,4 +1,8 @@
 
 # cargo-vet audits file
 
-[audits]
+[[audits.scim-kit]]
+who = "WyattAu <wyatt_au@protonmail.com>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "Self-audit of a first-party registry release; delta authored in this repo."
